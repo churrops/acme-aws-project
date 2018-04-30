@@ -4,6 +4,7 @@
 
 * GIT
 * AWS CLI
+* Docker - <pre>curl -fsSl https://get.docker.com | sh</pre>
 * Credenciais IAM com privilégios de admin
 * Terraform - https://www.packer.io/downloads.html
 * Packer - https://www.terraform.io/downloads.html
