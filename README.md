@@ -1,6 +1,16 @@
 # Terraform ACME
 
-git clone 
+https://www.packer.io/downloads.html
+https://www.terraform.io/downloads.html
+
+## Instalando AWS CLI
+
+<pre>pip install awscli --upgrade
+aws configure --profile acme
+</pre>
+
+
+<pre>git clone https://github.com/churrops/acme-aws-project.git</pre>
 
 ## Criando o bucket s3 para armazenar o state file
 
