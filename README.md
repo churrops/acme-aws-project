@@ -4,19 +4,21 @@
 
 * GIT
 * AWS CLI
-* Docker - <pre>curl -fsSl https://get.docker.com | sh</pre>
-* Credenciais IAM com privilégios de admin
-* Terraform - https://www.packer.io/downloads.html
-* Packer - https://www.terraform.io/downloads.html
-
-## Instalando AWS CLI e exportando as variáveis para trabalhar com Terraform
-
 <pre>pip install awscli --upgrade
 aws configure --profile acme
   AWS Access Key ID [None]: XXXXXXXXXXXXXX
   AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXXX
   Default region name [None]: sa-east-1
 </pre>
+* Docker
+<pre>curl -fsSl https://get.docker.com | sh</pre>
+* Credenciais IAM com privilégios de admin
+* Terraform
+<pre>https://www.packer.io/downloads.html</pre>
+* Packer
+<pre>https://www.terraform.io/downloads.html</pre>
+
+## Exportando as variáveis para trabalhar com Terraform
 
 <pre>
 export AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id --profile acme)
