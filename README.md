@@ -21,14 +21,13 @@ export AWS_SECRET_ACCESS_KEY=$(aws configure get aws_secret_access_key --profile
 export AWS_DEFAULT_REGION=sa-east-1
 </pre>
 
-## Clonando o repositório
+## Executando o projeto
+
+#### Clonando o repositório
 
 <pre>git clone https://github.com/churrops/acme-aws-project.git</pre>
 
-## Exportando as credenciais
-
-
-## Criando o bucket s3 para armazenar o state file
+#### Criando o bucket s3 para armazenar o state file
 
 <pre>
 cd acme-aws-project/terraform/s3
