@@ -7,15 +7,26 @@
 * Terraform - https://www.packer.io/downloads.html
 * Packer - https://www.terraform.io/downloads.html
 
-## Instalando AWS CLI
+## Instalando AWS CLI e exportando as variáveis para trabalhar com Terraform
 
 <pre>pip install awscli --upgrade
 aws configure --profile acme
 </pre>
 
+<pre>
+export AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id --profile acme)
+
+export AWS_SECRET_ACCESS_KEY=$(aws configure get aws_secret_access_key --profile acme)
+
+export AWS_DEFAULT_REGION=sa-east-1
+</pre>
+
 ## Clonando o repositório
 
 <pre>git clone https://github.com/churrops/acme-aws-project.git</pre>
+
+## Exportando as credenciais
+
 
 ## Criando o bucket s3 para armazenar o state file
 
