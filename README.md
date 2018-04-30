@@ -4,6 +4,7 @@
 
 * GIT
 * AWS CLI
+* Credenciais IAM com privilégios de admin
 * Terraform - https://www.packer.io/downloads.html
 * Packer - https://www.terraform.io/downloads.html
 
@@ -11,6 +12,9 @@
 
 <pre>pip install awscli --upgrade
 aws configure --profile acme
+  AWS Access Key ID [None]: XXXXXXXXXXXXXX
+  AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXXX
+  Default region name [None]: sa-east-1
 </pre>
 
 <pre>
@@ -36,7 +40,7 @@ terraform plan
 terraform apply
 </pre>
 
-## Criando a VPC e seus recursos
+#### Criando a VPC e seus recursos
 
 <pre>
 cd ../vpc
