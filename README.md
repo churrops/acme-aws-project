@@ -1,7 +1,11 @@
-# Terraform ACME
+# Projeto ACME
 
-https://www.packer.io/downloads.html
-https://www.terraform.io/downloads.html
+## Pré-requisitos
+
+* GIT
+* AWS CLI
+* Terraform - https://www.packer.io/downloads.html
+* Packer - https://www.terraform.io/downloads.html
 
 ## Instalando AWS CLI
 
@@ -9,6 +13,7 @@ https://www.terraform.io/downloads.html
 aws configure --profile acme
 </pre>
 
+## Clonando o repositório
 
 <pre>git clone https://github.com/churrops/acme-aws-project.git</pre>
 
