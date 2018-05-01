@@ -2,7 +2,7 @@ variable "region"                 { default = "sa-east-1"}
 variable "bucket_name"            { default = "acme-terraform-state-dev" }
 
 /*Instance ans autoscaling settings*/
-variable "tag_name"               { default = "ec2-acme" }
+variable "tag_name"               { default = "ec2-acme-prd" }
 /*Tamanho da instancia que será utilizado*/
 variable "instance_type"          { default = "t2.micro" }
 /*Porta que será usada pela aplicação. É usada para criação das regras de security group*/
