@@ -1,0 +1,4 @@
+resource "aws_key_pair" "keyPair" {
+  key_name   = "deploy@acme.com"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDE/lESVcMVtnkuPh9oQ007dQ7Yr2n7JT73Z0HyGTiAJDBggAZAaIp8YqYg7fWiDuQQUWaaEzVeFJc7rbfSHB1uUVFOd+8D6hch2Nt2g1Lx3HZGUgRThpV0Kx9OPEKvVMqb908ZntPFDalULiHn/HO3RJ1anmmp3UsCnybLY5ngXj1FkubXmLkmGNf/qcCKA0ByZ1lGrMizrt9TvchuRPJN/S2IPvTOsfe4nH0pANxDnJnpyxmiW1qtZqklIYEiAG2cOdukUNYtJzYV4pi5GtvjCZWfcCjxs5tgEBZGkUAcjVhgOhdB5B1CU+8gNSonOS45SVq9VwxGQ+c3IXuaHxol deploy@acme.com"
+}

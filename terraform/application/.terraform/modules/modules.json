@@ -1,1 +1,0 @@
-{"Modules":[{"Source":"../modules/aws_security_group","Key":"1.instances_sg;../modules/aws_security_group","Version":"","Dir":".terraform/modules/e4c32ee264f34346955daf25ad63df51","Root":""},{"Source":"../modules/aws_security_group","Key":"1.loadbalancer_sg;../modules/aws_security_group","Version":"","Dir":".terraform/modules/617b7ee4ec5bf3a3f72ece047c397d0c","Root":""}]}
