@@ -1,0 +1,25 @@
+{
+  "builders": [
+  {
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "sa-east-1",
+    "source_ami": "ami-f09dcc9c",
+    "subnet_id": "subnet-0dde555767bd2a493",
+    "instance_type": "t2.micro",
+    "ssh_username": "ec2-user",
+    "ami_name": "ami_acme_{{isotime \"2006-01-02\"}}_{{timestamp}}",
+    "ami_description": "ami-acme_{{isotime \"2006-01-02\"}}",
+    "ssh_keypair_name": "deploy@acme.com",
+    "ssh_private_key_file": "../ssh-key/aws-ssh-key-acme.pem"
+  }
+  ],
+
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "setup-ami.sh"
+    }
+  ]
+}

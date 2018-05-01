@@ -34,6 +34,8 @@ export AWS_DEFAULT_REGION=sa-east-1
 
 <pre>git clone https://github.com/churrops/acme-aws-project.git</pre>
 
+<pre>ssh-keygen -t rsa -f ssh-key/aws-ssh-key-acme.pem -C "deploy@acme.com" -q -N ""</pre>
+
 #### Criando o bucket s3 para armazenar o state file
 
 <pre>

@@ -1,0 +1,16 @@
+[Unit]
+Description=Whoami Container
+After=docker.service
+Requires=docker.service
+ 
+[Service]
+TimeoutStartSec=0
+Restart=always
+ExecStartPre=-/usr/bin/docker stop %n
+ExecStartPre=-/usr/bin/docker rm %n
+ExecStartPre=/usr/bin/docker pull whoami
+ExecStart=/usr/bin/docker container run -d -p 80:80 emilevauge/whoami
+ 
+[Install]
+WantedBy=multi-user.target
+
